@@ -17,20 +17,20 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan("net.novasaputra.springmvc")
-@ImportResource("classpath:META-INF/springmvc-servlet.xml")
+//@ImportResource("classpath:WEB-INF/springmvc-servlet.xml")
 public class WebConfig extends WebMvcConfigurerAdapter {
 	private static final Logger logger = LoggerFactory.getLogger(WebConfig.class);
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+		registry.addResourceHandler("/WEB-INF/pages/**/*").addResourceLocations("/WEB-INF/pages/");
 		logger.info("Registered resource handler!");
 	}
 
 	@Bean
 	public InternalResourceViewResolver configureInternalResourceViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/pages/");
+		resolver.setPrefix("WEB-INF/pages/");
 		resolver.setSuffix(".jsp");
 		logger.info("Configured Internal Resource View Resolver!");
 		return resolver;
