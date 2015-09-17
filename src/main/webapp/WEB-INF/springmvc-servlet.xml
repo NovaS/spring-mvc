@@ -13,7 +13,7 @@
 	
 	<context:component-scan base-package="net.novasaputra.springmvc"/>
 	<mvc:annotation-driven />
-	<mvc:resources location="/static/**" mapping="/static/**" />
+	<mvc:resources location="/static/" mapping="/static/**" />
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/pages/"/>

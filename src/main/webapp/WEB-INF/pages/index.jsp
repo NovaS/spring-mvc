@@ -1,4 +1,3 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html">
 <html lang="en">
@@ -6,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<spring:url value="/static/css/bootstrap.min.css" var="css" />
-	<link href="${css}" rel="stylesheet" />
+	<link href=<c:url value="/static/css/bootstrap.min.css"/> rel="stylesheet" />
 	<title>Spring MVC</title>
 </head>
 <body>
@@ -16,7 +14,6 @@
 			<strong>Message: ${message}</strong>
 		</div>
 	</div>
-	<spring:url value="/static/js/bootstrap.min.js" var="js" />
-	<script src="${js}"></script>
+	<script src=<c:url value="/static/js/bootstrap.min.js"/>></script>
 </body>
 </html>
