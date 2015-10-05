@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href=<c:url value="/static/css/bootstrap.min.css"/> rel="stylesheet" />
+	<link href=<c:url value="/css/bootstrap.min.css"/> rel="stylesheet" />
 	<title>Spring MVC</title>
 </head>
 <body>
@@ -14,6 +14,6 @@
 			<strong>Message: ${message}</strong>
 		</div>
 	</div>
-	<script src=<c:url value="/static/js/bootstrap.min.js"/>></script>
+	<script src=<c:url value="/js/bootstrap.min.js"/>></script>
 </body>
 </html>
