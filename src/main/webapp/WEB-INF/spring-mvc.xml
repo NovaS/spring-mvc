@@ -13,7 +13,7 @@
 	
 	<context:component-scan base-package="net.novasaputra.springmvc.controller"/>
 	<mvc:annotation-driven />
-	<mvc:resources location="/resources/" mapping="/**" />
+	<mvc:resources mapping="/**" location="classpath:/META-INF/resources/webjars/" />
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/pages/"/>
