@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd
         ">
 	
-	<context:component-scan base-package="net.novasaputra.springmvc"/>
+	<context:component-scan base-package="net.novasaputra.springmvc.controller"/>
 	<mvc:annotation-driven />
 	<mvc:resources location="/resources/" mapping="/**" />
 	
