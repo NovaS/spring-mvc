@@ -15,6 +15,7 @@
 		<servlet.version>3.1.0</servlet.version>
 		<jstl.version>1.2</jstl.version>
 		<bootstrap.version>3.3.5</bootstrap.version>
+		<thymeleaf.version>2.1.4.RELEASE</thymeleaf.version>
 	</properties>
 	<dependencies>
 		<!-- Spring MVC -->
@@ -40,17 +41,11 @@
 			<artifactId>jcl-over-slf4j</artifactId>
 			<version>${jcl-over-slf4j.version}</version>
 		</dependency>
-		<!-- Servlet API -->
+		<!-- Thymeleaf API -->
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>${servlet.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>${jstl.version}</version>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring4</artifactId>
+			<version>${thymeleaf.version}</version>
 		</dependency>
 		<!-- Web Assets -->
 		<dependency>
